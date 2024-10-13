@@ -128,11 +128,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\admin\DashBoardController.cs" />
+    <Compile Include="Controllers\admin\OrderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\admin\ProductController.cs" />
     <Compile Include="Controllers\admin\UserController.cs" />
-    <Compile Include="Controllers\TaiController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -309,11 +308,10 @@
     <Content Include="Views\Product\ProductTable.cshtml" />
     <Content Include="Views\DashBoard\Index.cshtml" />
     <Content Include="Views\Shared\LayoutUser.cshtml" />
-    <Content Include="Views\Test\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Tai\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
