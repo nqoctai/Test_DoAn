@@ -132,7 +132,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\admin\ProductController.cs" />
     <Compile Include="Controllers\admin\UserController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,6 +184,7 @@
     <Content Include="Content\img\1711080948771-acer-01.png" />
     <Content Include="Content\img\1711081080930-asus-03.png" />
     <Content Include="Content\img\1711081278418-dell-02.png" />
+    <Content Include="Content\img\accessory-destop.png" />
     <Content Include="Content\img\avatar.jpg" />
     <Content Include="Content\img\baner-1.png" />
     <Content Include="Content\img\banner-fruits.jpg" />
@@ -302,13 +302,18 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\LayoutAdmin.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\User\UserTable.cshtml" />
     <Content Include="Views\Product\ProductTable.cshtml" />
     <Content Include="Views\DashBoard\Index.cshtml" />
     <Content Include="Views\Shared\LayoutUser.cshtml" />
+    <Content Include="Views\Home\GioiThieu.cshtml" />
+    <Content Include="Views\Home\SanPham.cshtml" />
+    <Content Include="Views\Home\GioHang.cshtml" />
+    <Content Include="Views\Home\LienHe.cshtml" />
+    <Content Include="Views\Home\ThanhToan.cshtml" />
+    <Content Include="Views\Home\DatHangThanhCong.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -18,6 +18,33 @@ namespace Test_DoAn.Controllers
             return View(listProduct);
         }
 
-       
+        public ActionResult GioiThieu() { 
+            return View();
+        }
+
+        public ActionResult SanPham()
+        {
+            return View();
+        }
+
+        public ActionResult GioHang()
+        {
+            return View();
+        }
+
+        public ActionResult LienHe()
+        {
+            return View();
+        }
+
+        public ActionResult ThanhToan()
+        {
+            return View();
+        }
+
+        public ActionResult DatHangThanhCong() { 
+            return View();
+        }
+
     }
 }
