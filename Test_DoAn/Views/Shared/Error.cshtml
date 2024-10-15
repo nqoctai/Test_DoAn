@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Error</title>
-</head>
-<body>
-    <hgroup>
-        <h1>Error.</h1>
-        <h2>An error occurred while processing your request.</h2>
-    </hgroup>
-</body>
-</html>
+﻿@model HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="color: red">Error, we ran into erros. Please try again!</h2>
+
+<h5>Action: @Model.ActionName</h5>
+<h5>Controller: @Model.ControllerName</h5>
+<h5>Message: @Model.Exception.Message</h5>
+

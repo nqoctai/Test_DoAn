@@ -1,0 +1,2 @@
+Message: This is an exception
+Message: Can not register right now

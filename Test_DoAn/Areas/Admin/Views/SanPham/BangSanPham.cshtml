@@ -1,10 +1,10 @@
 ﻿
 @{
-    ViewBag.Title = "UserTable";
-    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+    ViewBag.Title = "BangSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
 }
-@using Test_DoAn.Models
-@model List<User>
+@using Test_DoAn.Models;
+@model List<Product>
 <style>
     body {
         background-color: #f8f9fa;
@@ -72,16 +72,18 @@
     <main>
         <div class="container-fluid px-4">
             <h1 class="mt-4 text-center display-4 font-weight-bold text-primary">
-                Manage Users
+                Manage Products
             </h1>
             <ol class="breadcrumb mb-4 bg-light rounded">
                 <li class="breadcrumb-item">
-                    <a href="/admin/admin.html"
-                       class="text-decoration-none text-primary">Dashboard</a>
+                    <a href="admin.html"
+                       class="text-decoration-none text-primary">
+                        Dashboard
+                    </a>
                 </li>
                 <li class="breadcrumb-item active text-secondary"
                     aria-current="page">
-                    Users
+                    Products
                 </li>
             </ol>
 
@@ -90,37 +92,38 @@
                     <div class="col-12 mx-auto">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <h3 class="text-secondary">
-                                User Table
+                                Product Table
                             </h3>
-                            <a href="/admin/createuser.html"
+                            <a href="/admin/createProduct.html"
                                class="btn btn-primary rounded-pill">
                                 <i class="bi bi-plus-circle"></i>
-                                Create a User
+                                Create a Product
                             </a>
                         </div>
 
                         <hr />
+
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover text-center">
                                 <thead class="table-dark">
                                     <tr>
                                         <th>ID</th>
-                                        <th>Email</th>
-                                        <th>Full Name</th>
-                                        <th>Role</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Factory</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach (User user in Model)
+                                    @foreach (Product product in Model)
                                     {
                                         <tr>
-                                            <th>@user.ID</th>
-                                            <td>@user.Email</td>
-                                            <td>@user.UserName</td>
+                                            <th>@product.ID</th>
                                             <td>
-                                                <span class="badge bg-success">USER</span>
+                                                @product.Name
                                             </td>
+                                            <td>@product.Price</td>
+                                            <td>@product.Brand</td>
                                             <td>
                                                 <a href="#"
                                                    class="btn btn-success btn-sm">
@@ -160,4 +163,5 @@
         </div>
     </footer>
 </div>
+
 

@@ -4,13 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Test_DoAn.Models;
+using Test_DoAn.Filters;
 
-namespace Test_DoAn.Controllers.admin
+namespace Test_DoAn.Areas.Admin.Controllers
 {
-    public class ProductController : Controller
+    [AdminAuthorization]
+    public class SanPhamController : Controller
     {
-        // GET: Product
-        public ActionResult ProductTable()
+        // GET: Admin/SanPham
+        public ActionResult BangSanPham()
         {
             LaptopShopDBContext db = new LaptopShopDBContext();
             List<Product> products = db.Products.ToList();

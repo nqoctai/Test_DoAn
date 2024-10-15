@@ -104,7 +104,11 @@
                                          src="/img/avatar.jpg"
                                          alt="Avatar" />
                                     <div class="text-center my-3">
-                                        Admin
+                                        @*Admin*@
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <div style="color: red; font-weight: bold">Hello @User.Identity.Name</div>
+                                        }
                                     </div>
                                 </li>
 

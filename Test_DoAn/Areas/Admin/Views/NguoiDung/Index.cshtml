@@ -1,0 +1,32 @@
+﻿@model List<Test_DoAn.Identity.AppUser>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Date of birth</th>
+
+    </tr>
+    @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.UserName
+                    </td>
+                    <td>
+                        @item.Email
+                    </td>
+                    <td>
+                        @item.PhoneNumber
+                    </td>
+                    <td>
+                        @item.Birthday
+                    </td>
+                </tr>
+            }
+</table>
+
